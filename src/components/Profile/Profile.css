@@ -61,6 +61,7 @@
   align-items: center;
   background-color: rgba(250, 235, 215, 0.445);
   border-radius: 5px;
+  box-shadow: -5px 16px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .statsinfo:not(:last-child) {
   margin-right: 5px;

@@ -1,4 +1,4 @@
-import defaultImagine from "../Profile/default.jpg"
+import defaultImagine from "../Profile/default.jpg";
 import '../Profile/Profile.css';
 import PropTypes from 'prop-types';
 const Profile = ({ avatar = defaultImagine, username, tag, location, stats }) => {

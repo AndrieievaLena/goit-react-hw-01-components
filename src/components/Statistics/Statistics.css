@@ -1,0 +1,36 @@
+.Statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.statisticlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.445);
+  border-radius: 20px;
+  margin-right: 10px;
+  box-shadow: -5px 16px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.staticlabel {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: rgb(22, 16, 19);
+  margin: 0px;
+  padding: 10px 20px;
+}
+.staticlabel:hover {
+  color: brown;
+  cursor: pointer;
+}
+.percentage {
+  font-family: Roboto;
+  font-size: 30px;
+  color: rgb(82, 32, 48);
+  margin: 0px;
+  padding: 10px;
+}

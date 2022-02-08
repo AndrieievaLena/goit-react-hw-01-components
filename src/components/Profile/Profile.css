@@ -1,0 +1,87 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: flex-end;
+  padding-top: 50px;
+  padding-left: 50px;
+  width: 300px;
+}
+
+.avatar {
+  border-radius: 80%;
+  background-color: rgba(97, 21, 72, 0.37);
+  box-shadow: -5px 16px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.profileinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  color: rgb(58, 52, 52);
+  background-color: rgba(196, 182, 193, 0.521);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.name {
+  font-family: Roboto;
+  font-size: 30px;
+  color: rgb(58, 52, 52);
+  margin: 0px;
+  padding: 10px;
+}
+.tag {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: rgb(141, 72, 106);
+  margin: 0px;
+}
+.tag:hover {
+  color: brown;
+  cursor: pointer;
+}
+.location {
+  font-family: Roboto;
+  font-size: 15px;
+  color: rgb(58, 52, 52);
+  margin: 0px;
+  padding: 10px;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0px;
+}
+.statsinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.445);
+  border-radius: 5px;
+}
+.statsinfo:not(:last-child) {
+  margin-right: 5px;
+}
+.label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: rgb(141, 72, 106);
+  margin: 0px;
+  padding: 5px;
+}
+.label:hover {
+  color: brown;
+  cursor: pointer;
+}
+.quantity {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: rgb(22, 16, 19);
+  margin: 0px;
+  padding: 5px;
+}

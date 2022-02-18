@@ -6,11 +6,11 @@ import FriendListItem from "./components/Friends/Friends";
 import friendInfo from "../src/json/friends.json";
 import TransactionHistory from "./components/Transaction/Transaction";
 import transactions from "../src/json/transactions.json";
-import "./index.css";
+import s from "./index.module.css";
 const App = () => {
   return (
     <div>
-      <div className="profilesection">
+      <div className={s.profile}>
       <Profile
             username={user.username}
             tag={user.tag}
@@ -20,7 +20,7 @@ const App = () => {
         />
       <StatisticsList stats={datas} />
       </div>  
-      <div className="infosection">
+      <div className={s.section}>
       <FriendListItem friends={friendInfo} />
       <TransactionHistory items={transactions} />
       </div>

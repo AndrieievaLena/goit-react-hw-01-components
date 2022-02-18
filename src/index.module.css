@@ -1,4 +1,4 @@
-@import-normalize;
+/* @import-normalize; */
 /* bring in normalize.css styles  */
 body {
   margin: 0;
@@ -14,29 +14,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.statictitle {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 40px;
-  color: rgb(141, 72, 106);
-  background-color: rgba(196, 182, 193, 0.521);
-  border-radius: 10px;
-  margin: 0px;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 1px 2px 10px 0px rgba(78, 66, 78, 0.144) inset;
-}
-.profilesection {
+
+.profile {
   display: flex;
 }
-.statisticinfo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style-type: none;
-  padding: 0px;
-}
-.infosection {
+
+.section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;

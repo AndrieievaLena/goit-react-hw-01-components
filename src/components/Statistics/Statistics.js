@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
-import "./Statistics.css"
+import s from"./Statistics.module.css"
 const Statistics = ({  label, percentage }) => {
    
     return (
         <section>
-             <div className="statisticlist">
-             <span className="staticlabel">{label}</span>
-             <span className="percentage">{percentage} %</span>
+             <div className={s.list}>
+             <span className={s.label}>{label}</span>
+             <span className={s.percentage}>{percentage} %</span>
              </div>
         </section>
       

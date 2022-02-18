@@ -1,14 +1,14 @@
 import defaultImagine from "./default.jpg"
 import PropTypes from "prop-types";
-import "./Friends.css"
+import s from "./Friends.module.css"
 const FriendListItem = ({ avatar = defaultImagine, name, isOnline }) => {
     return (
      
-           <li className="FriendListItem">
-                <img className="friendsavatar" src={avatar} alt="User avatar" width="48" />
-               <div className ="friendssection">
-               <span className="status">{isOnline ? 'Online' : 'Offline'}</span>
-                <p className="friendsname">{name}</p>
+           <li className={s.List}>
+                <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
+               <div className ={s.section}>
+               <span className={ isOnline ? s.Online : s.Offline}></span>
+                <p className={s.name}>{name}</p>
                </div> 
             </li>
     );

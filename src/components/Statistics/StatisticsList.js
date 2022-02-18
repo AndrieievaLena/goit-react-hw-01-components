@@ -1,12 +1,12 @@
 import Statistics from "./Statistics";
-import "./Statistics.css"
+import s from "./Statistics.module.css"
 
 const StatisticsList = ({ stats }) => {
     return (
-     <div  className="Statistics">
-            <h2 className="statictitle">Upload stats</h2>
+     <div  className={s.Statistics}>
+            <h2 className={s.title}>Upload stats</h2>
          
-           <ul className="statisticinfo">
+           <ul className={s.info}>
                 {stats.map(stat => (
                     <li  key={stat.id}>
                         <Statistics

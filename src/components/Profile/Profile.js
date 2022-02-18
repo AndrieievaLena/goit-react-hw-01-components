@@ -1,35 +1,35 @@
 import defaultImagine from "../Profile/default.jpg";
-import '../Profile/Profile.css';
+import s from '../Profile/Profile.module.css';
 import PropTypes from 'prop-types';
 const Profile = ({ avatar = defaultImagine, username, tag, location, stats }) => {
     return (
-        <div className="Profile">
-            <div className="description">
-                <img
+        <div className={s.portfolio}>
+            <div className={s.description}>
+                <img 
                     src={avatar}
                     alt="User avatar"
                     width="200px"
-                    className="avatar"
+                    className={s.avatar}
                 />
-                <div className="profileinfo">
-                <p className="name">{username}</p>
-                <p className="tag">@{tag}</p>
-                <p className="location">{location}</p></div>
+                <div className={s.info}>
+                <p className={s.name}>{username}</p>
+                <p className={s.tag}>@{tag}</p>
+                <p className={s.location}>{location}</p></div>
                
             </div>
 
-            <ul className="stats">
-                <li className="statsinfo">
-                    <span class="label">Followers</span>
-                    <span class="quantity"> {stats.followers}</span>
+            <ul className={s.stats}>
+                <li className={s.statsinfo}>
+                    <span className={s.label}>Followers</span>
+                    <span className={s.quantity}> {stats.followers}</span>
                 </li>
-                <li className="statsinfo">
-                    <span className="label">Views</span>
-                    <span className="quantity"> {stats.views}</span>
+                <li className={s.statsinfo}>
+                    <span className={s.label}>Views</span>
+                    <span className={s.quantity}> {stats.views}</span>
                 </li>
-                <li className="statsinfo">
-                    <span className="label">Likes</span>
-                    <span className="quantity"> {stats.likes}</span>
+                <li className={s.statsinfo}>
+                    <span className={s.label}>Likes</span>
+                    <span className={s.quantity}> {stats.likes}</span>
                 </li>
             </ul>
         </div>

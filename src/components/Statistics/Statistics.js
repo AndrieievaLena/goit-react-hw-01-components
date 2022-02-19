@@ -4,7 +4,7 @@ function Statistics({ id, label, percentage})  {
     return (
             <li className={s.list} key={id}>
                 <span className={s.label}>{label}</span>
-                <span className={s.percentage}>{percentage}</span>
+                <span className={s.percentage}>{percentage}%</span>
             </li>
     )
 

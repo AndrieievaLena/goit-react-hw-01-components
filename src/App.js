@@ -18,7 +18,8 @@ const App = () => {
             avatar={user.avatar}
             stats={user.stats}
         />
-      <StatisticsList stats={datas} />
+      <StatisticsList title="Upload stats" stats={datas} />
+      
       </div>  
       <div className={s.section}>
       <FriendListItem friends={friendInfo} />

@@ -1,17 +1,14 @@
 import PropTypes from "prop-types";
 import s from"./Statistics.module.css"
-const Statistics = ({  label, percentage }) => {
-   
+function Statistics({ id, label, percentage})  {
     return (
-        <section>
-             <div className={s.list}>
-             <span className={s.label}>{label}</span>
-             <span className={s.percentage}>{percentage} %</span>
-             </div>
-        </section>
-      
+            <li className={s.list} key={id}>
+                <span className={s.label}>{label}</span>
+                <span className={s.percentage}>{percentage}</span>
+            </li>
     )
-};
+
+}
 
 Statistics.propTypes = {
     label: PropTypes.string.isRequired,
